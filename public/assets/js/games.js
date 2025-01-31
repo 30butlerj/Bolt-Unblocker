@@ -13,9 +13,9 @@ fetch('/assets/json/games.json')
       `;
 
             gameElement.addEventListener('click', async () => {
-                if (game.name == "Fortnite") {
+                if (game.name == "Fortnite via Xbox") {
                     alert("To play Fortnite, you must set your proxy to Scramjet. Go to settings and make sure your proxy is Scramjet, then reload.");
-                    open("/scram/service/" + encodeURIComponent("https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a"), '_blank');
+                    open("/scram/service/" + encodeURIComponent("https://xbox.com/en-us/play"), '_blank');
                     return;
                 }
                 if (game.name == "Bloons TD Battles 2") {
