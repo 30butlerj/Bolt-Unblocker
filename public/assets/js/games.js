@@ -14,7 +14,7 @@ fetch('/assets/json/games.json')
 
             gameElement.addEventListener('click', async () => {
                 if (game.name == "Fortnite via Xbox") {
-                    alert("To play Fortnite, you must set your proxy to Scramjet. Go to settings and make sure your proxy is Scramjet, then reload.");
+                    alert("To play Fortnite, you must set your proxy to Scramjet. Go to settings and make sure your proxy is Scramjet, then reload. Note: Doesn't drop directly on Fortnite, please navigate.");
                     open("/scram/service/" + encodeURIComponent("https://xbox.com/en-us/play"), '_blank');
                     return;
                 }
