@@ -48,5 +48,10 @@
         "name": "Crazygames",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Crazygames_jpg_logo.jpg/800px-Crazygames_jpg_logo.jpg",
         "url": "https://www.crazygames.com"
+    },
+    {
+        "name": "Cool Math Games",
+        "image": "https://play-lh.googleusercontent.com/I3hW7sKSGtOKeTpmsBxka7Eyul5HXTZUD4H3EbJEWyW-4vDlpyEG5Jtu9D8JgR0__g=s94",
+        "url": "coolmathgames.com"
     }
 ]
