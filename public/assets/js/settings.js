@@ -1,6 +1,6 @@
 var proxySelect = document.getElementById("proxy-select");
 var transSelect = document.getElementById("trans-select");
-var ab = document.getElementById("ab");
+var ab = document.getElementById("cloaking");
 var blooket = document.getElementById("blooket");
 var gimkit = document.getElementById("gimkit");
 var tab = 0;
