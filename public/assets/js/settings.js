@@ -105,7 +105,7 @@ if (ab) {
     </body>
   </html>
 `);
-    window.location.href = "https://classroom.google.com/u/";
+    window.location.href = "https://wilton.schoology.com";
   });
 }
 
