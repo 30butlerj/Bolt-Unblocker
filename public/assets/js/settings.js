@@ -12,6 +12,7 @@ var themeselect = document.getElementById("theme-select");
 var bginput = document.getElementById("bginput");
 var bgset = document.getElementById("bgset");
 var engineSelect = document.getElementById("engine-select");
+document.title = localStorage.getItem("cloak");
 
 if (ptab && ttab && etab) {
   checkTabs();
