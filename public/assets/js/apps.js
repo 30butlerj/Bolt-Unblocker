@@ -1,3 +1,5 @@
+document.title = localStorage.getItem("cloak");
+
 fetch('/assets/json/apps.json')
     .then(response => response.json())
     .then(apps => {
