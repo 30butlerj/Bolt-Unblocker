@@ -1,7 +1,13 @@
 var form = document.getElementById("form");
 var input = document.getElementById("input");
 var discord = document.getElementById("discord");
-document.title = localStorage.getItem("cloak");
+var cloak = localStorage.getItem("cloak");
+document.title = cloak;
+if (cloak == "Home | Schoology") {
+    document.getElementById('icon').setAttribute('href','public/assets/imgs/bg/schoology.png');
+} else {
+    document.getElementById("icon").setAttribute("href","public/assets/imgs/bg/Google_Classroom_Logo.png");
+}
 
 
 
