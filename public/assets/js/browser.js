@@ -1,3 +1,5 @@
+document.title = localStorage.getItem("cloak");
+
 async function init() {
     try {
         const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
