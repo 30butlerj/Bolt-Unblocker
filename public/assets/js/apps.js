@@ -1,5 +1,11 @@
-document.title = localStorage.getItem("cloak");
-document.getElementById('icon').setAttribute('href','public/assets/imgs/bg/');
+var cloak = localStorage.getItem("cloak");
+document.title = cloak;
+if (cloak == "Home | Schoology") {
+    document.getElementById('icon').setAttribute('href','public/assets/imgs/bg/schoology.png');
+} else {
+    document.getElementById("icon").setAttribute("href","public/assets/imgs/bg/Google_Classroom_Logo.png");
+}
+
 
 fetch('/assets/json/apps.json')
     .then(response => response.json())
