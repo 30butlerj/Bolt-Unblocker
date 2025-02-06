@@ -12,7 +12,13 @@ var themeselect = document.getElementById("theme-select");
 var bginput = document.getElementById("bginput");
 var bgset = document.getElementById("bgset");
 var engineSelect = document.getElementById("engine-select");
-document.title = localStorage.getItem("cloak");
+var cloak = localStorage.getItem("cloak");
+document.title = cloak;
+if (cloak == "Home | Schoology") {
+    document.getElementById('icon').setAttribute('href','public/assets/imgs/bg/schoology.png');
+} else {
+    document.getElementById("icon").setAttribute("href","public/assets/imgs/bg/Google_Classroom_Logo.png");
+}
 
 if (ptab && ttab && etab) {
   checkTabs();
