@@ -15,6 +15,11 @@
         "url": "https://www.diep.io"
     },
     {
+        "name": "Eggy Car",
+        "image": "https://eggy-car.github.io/img/logo_white.png",
+        "url": "eggy-car.github.io"
+    },
+    {
         "name": "DigDig.io",
         "image": "https://kevin.games/assets/images/index/digdig-io.jpg",
         "url": "https://digdig.io/"
