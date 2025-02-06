@@ -1,4 +1,5 @@
 document.title = localStorage.getItem("cloak");
+document.getElementById('icon').setAttribute('href','public/assets/imgs/bg/');
 
 fetch('/assets/json/apps.json')
     .then(response => response.json())
