@@ -1,6 +1,7 @@
 var proxySelect = document.getElementById("proxy-select");
 var transSelect = document.getElementById("trans-select");
-var ab = document.getElementById("cloaking");
+var schoology = document.getElementById("Schoology");
+var googleClassroom = document.getElementById("Google Classroom");
 var blooket = document.getElementById("blooket");
 var gimkit = document.getElementById("gimkit");
 var tab = 0;
@@ -79,48 +80,10 @@ if (transSelect) {
   });
 }
 
-if (ab) {
-  ab.addEventListener("click", function () {
-    var abtab = window.open("about:blank", "blank");
-    abtab.document.write(`
-  <html>
-    <head>
-      
-      <style>
-        body, html {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          height: 100%;
-        }
-        iframe {
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
-      </style>
-    </head>
-    <body>
-      <iframe src="/index.html" frameborder="0"></iframe>
-    </body>
-  </html>
-`);
-    window.location.href = "https://wilton.schoology.com";
-  });
-}
-
-if (blooket) {
-  blooket.addEventListener("click", async function () {
-    try {
-      const response = await fetch('/assets/cheats/blooket.txt');
-      const text = await response.text();
-      await navigator.clipboard.writeText(text);
-      alert("Copied to clipboard!");
-    } catch (err) {
-      alert("Failed to copy cheats");
-    }
-  });
-}
+if (schoology) {
+  schoology.addEventListener("click", function () {
+    localStorage.setItem("cloak", "schoology");
+  }
 
 if (gimkit) {
   gimkit.addEventListener("click", async function () {
