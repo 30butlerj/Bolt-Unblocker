@@ -1,7 +1,7 @@
 var form = document.getElementById("form");
 var input = document.getElementById("input");
 var discord = document.getElementById("discord");
-
+document.title = localStorage.getItem("cloak");
 
 
 
