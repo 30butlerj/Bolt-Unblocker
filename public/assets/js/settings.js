@@ -83,8 +83,15 @@ if (transSelect) {
 
 if (schoology) {
   schoology.addEventListener("click", function () {
-    localStorage.setItem("cloak", "schoology");
-  }
+    localStorage.setItem("cloak", "Home | Schoology");
+  });
+}
+
+if (googleClassroom) {
+  googleClassroom.addEventListener("click", function () {
+    localStorage.setItem("cloak", "Home");
+  });
+}
 
 if (gimkit) {
   gimkit.addEventListener("click", async function () {
