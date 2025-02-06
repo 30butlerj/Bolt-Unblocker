@@ -13,11 +13,16 @@ var bginput = document.getElementById("bginput");
 var bgset = document.getElementById("bgset");
 var engineSelect = document.getElementById("engine-select");
 var cloak = localStorage.getItem("cloak");
-document.title = cloak;
-if (cloak == "Home | Schoology") {
-    document.getElementById('icon').setAttribute('href','public/assets/imgs/bg/schoology.png');
+if (!cloak) {
+    document.title = "Home";
 } else {
-    document.getElementById("icon").setAttribute("href","public/assets/imgs/bg/Google_Classroom_Logo.png");
+    document.title = cloak;
+}
+
+if (cloak == "Home | Schoology") {
+    document.getElementById('icon').setAttribute('href','https://logosandtypes.com/wp-content/uploads/2020/07/powerschool.svg');
+} else {
+    document.getElementById("icon").setAttribute("href","https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png");
 }
 
 if (ptab && ttab && etab) {
