@@ -2,9 +2,10 @@ var form = document.getElementById("form");
 var input = document.getElementById("input");
 var discord = document.getElementById("discord");
 var cloak = localStorage.getItem("cloak");
-if (!cloak) {
+if (!cloak || cloak == "undefined") {
     document.title = "Home";
-    localStorage.setItem("cloak");
+    localStorage.setItem("cloak", "Home");
+    cloak = "Home";
 } else {
     document.title = cloak;
 }
