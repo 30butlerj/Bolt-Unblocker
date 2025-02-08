@@ -14,6 +14,7 @@ var engineSelect = document.getElementById("engine-select");
 var cloak = localStorage.getItem("cloak");
 if (!cloak) {
     document.title = "Home";
+    localStorage.setItem("cloak");
 } else {
     document.title = cloak;
 }
