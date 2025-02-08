@@ -11,10 +11,10 @@ var themeselect = document.getElementById("theme-select");
 var bginput = document.getElementById("bginput");
 var bgset = document.getElementById("bgset");
 var engineSelect = document.getElementById("engine-select");
-var cloak = localStorage.getItem("cloak");
-if (!cloak) {
+if (!cloak || cloak == "undefined") {
     document.title = "Home";
-    localStorage.setItem("cloak");
+    localStorage.setItem("cloak", "Home");
+    cloak = "Home";
 } else {
     document.title = cloak;
 }
