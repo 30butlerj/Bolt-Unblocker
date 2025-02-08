@@ -23,6 +23,7 @@ if (cloak == "Home | Schoology") {
 } else {
     document.getElementById("icon").setAttribute("href","https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png");
 }
+console.log(cloak);
 
 if (ptab && ttab && etab) {
   checkTabs();
