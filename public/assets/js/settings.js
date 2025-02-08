@@ -1,7 +1,6 @@
 var proxySelect = document.getElementById("proxy-select");
 var transSelect = document.getElementById("trans-select");
-var schoology = document.getElementById("Schoology");
-var googleClassroom = document.getElementById("Google Classroom");
+var cloakSelect = document.getElementById("cloak-select");
 var blooket = document.getElementById("blooket");
 var gimkit = document.getElementById("gimkit");
 var tab = 0;
@@ -92,16 +91,11 @@ if (transSelect) {
   });
 }
 
-if (schoology) {
-  schoology.addEventListener("click", function () {
-    localStorage.setItem("cloak", "Home | Schoology");
-  });
-}
-
-if (googleClassroom) {
-  googleClassroom.addEventListener("click", function () {
-    localStorage.setItem("cloak", "Home");
-  });
+if (cloakSelect) {
+    cloakSelect.value = localStorage.getItem("transport") || "Home";
+    cloakSelect.addEventListener("change", function () {
+        localStorage.setItem("cloak", cloakSelect.Value);
+    });
 }
 
 if (gimkit) {
