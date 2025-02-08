@@ -1,7 +1,9 @@
-var cloak = localStorage.getItem("cloak");
-if (!cloak) {
+var cloak = document.getElementById("cloak");
+
+if (!cloak || cloak == "undefined") {
     document.title = "Home";
-    localStorage.setItem("cloak");
+    localStorage.setItem("cloak", "Home");
+    cloak = "Home";
 } else {
     document.title = cloak;
 }
