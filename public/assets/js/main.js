@@ -4,6 +4,7 @@ var discord = document.getElementById("discord");
 var cloak = localStorage.getItem("cloak");
 if (!cloak) {
     document.title = "Home";
+    localStorage.setItem("cloak");
 } else {
     document.title = cloak;
 }
