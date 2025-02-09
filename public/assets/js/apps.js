@@ -1,4 +1,4 @@
-var cloak = document.getElementById("cloak");
+var cloak = localStorage.getItem("cloak");
 
 if (!cloak || cloak == "undefined") {
     document.title = "Home";
