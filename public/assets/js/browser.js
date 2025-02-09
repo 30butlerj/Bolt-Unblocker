@@ -16,6 +16,12 @@ if (!cloak || cloak == "undefined") {
     }
 }
 
+if (cloak == "Schoology") {
+    document.getElementById('icon').setAttribute('href','https://logosandtypes.com/wp-content/uploads/2020/07/powerschool.svg');
+} else {
+    document.getElementById("icon").setAttribute("href","https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png");
+}
+
 async function init() {
     try {
         const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
