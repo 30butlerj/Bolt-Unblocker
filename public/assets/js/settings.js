@@ -11,17 +11,25 @@ var themeselect = document.getElementById("theme-select");
 var bginput = document.getElementById("bginput");
 var bgset = document.getElementById("bgset");
 var engineSelect = document.getElementById("engine-select");
-var cloak = document.getElementById("cloak");
+var cloak = localStorage.getItem("cloak");
 
 if (!cloak || cloak == "undefined") {
     document.title = "Home";
-    localStorage.setItem("cloak", "Home");
-    cloak = "Home";
+    localStorage.setItem("cloak", "Google Classroom");
+    cloak = "Google Classroom";
 } else {
-    document.title = cloak;
+    if (cloak == "Schoology") {
+        document.title = "Home | Schoology";
+    } else if (cloak == "Google Classroom") {
+        document.title = "Home";
+    } else {
+        document.title = "Home";
+        localStorage.setItem("cloak", "Google Classroom");
+        cloak = "Google Classroom";
+    }
 }
 
-if (cloak == "Home | Schoology") {
+if (cloak == "Schoology") {
     document.getElementById('icon').setAttribute('href','https://logosandtypes.com/wp-content/uploads/2020/07/powerschool.svg');
 } else {
     document.getElementById("icon").setAttribute("href","https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png");
