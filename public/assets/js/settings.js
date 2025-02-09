@@ -104,7 +104,7 @@ if (transSelect) {
 }
 
 if (cloakSelect) {
-    cloakSelect.value = localStorage.getItem("cloak") || "Home";
+    cloakSelect.value = localStorage.getItem("cloak") || "Google Classroom";
     cloakSelect.addEventListener("change", function () {
         localStorage.setItem("cloak", cloakSelect.Value);
     });
